@@ -1,0 +1,465 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191206.160433.8627.0.001.json",
+    "dumpEventTime": "2019-12-06T16:04:33Z",
+    "dumpEventTimeStamp": "1575677073775",
+    "processId": 8627,
+    "cwd": "/home/bebopvinh/development/extra/colt-steele-ds-algo",
+    "commandLine": [
+      "node",
+      "/home/bebopvinh/development/extra/colt-steele-ds-algo/mergeSort/practice.js"
+    ],
+    "nodejsVersion": "v13.0.1",
+    "glibcVersionRuntime": "2.30",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.0.1",
+      "v8": "7.8.279.17-node.14",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.0.1/node-v13.0.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.0.1/node-v13.0.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.3.0-22-generic",
+    "osVersion": "#24+system76~1573659475~19.10~26b2022-Ubuntu SMP Wed Nov 13 20:0",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 2047,
+        "user": 419500,
+        "nice": 2800,
+        "sys": 176500,
+        "idle": 3924500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 2059,
+        "user": 517000,
+        "nice": 3900,
+        "sys": 151300,
+        "idle": 3853600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 1343,
+        "user": 489000,
+        "nice": 3200,
+        "sys": 147500,
+        "idle": 3877200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 1865,
+        "user": 465900,
+        "nice": 2200,
+        "sys": 168500,
+        "idle": 3894300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 2590,
+        "user": 479200,
+        "nice": 2200,
+        "sys": 168100,
+        "idle": 3865100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 1641,
+        "user": 581100,
+        "nice": 2700,
+        "sys": 167600,
+        "idle": 3761600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 1977,
+        "user": 370100,
+        "nice": 3800,
+        "sys": 246400,
+        "idle": 3864500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+        "speed": 1664,
+        "user": 432300,
+        "nice": 3500,
+        "sys": 153200,
+        "idle": 3926400,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp4s0",
+        "internal": false,
+        "mac": "d8:fb:5e:02:cc:a2",
+        "address": "192.168.1.5",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp4s0",
+        "internal": false,
+        "mac": "d8:fb:5e:02:cc:a2",
+        "address": "fe80::5df5:a0eb:a481:37a9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "pop-os"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b0d955",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009e9573",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b4333e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b436b9",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000cf0495",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000cc82b3",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray(int, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000e37b31",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000e37de0",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000fe1d5b",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x000000000138df79",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2712756224,
+    "totalCommittedMemory": 2680425464,
+    "usedMemory": 2677832744,
+    "availableMemory": 16759296,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 2075376,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      },
+      "old_space": {
+        "memorySize": 1945600,
+        "committedMemory": 1591960,
+        "capacity": 1232456,
+        "used": 1232456,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 176352,
+        "capacity": 157184,
+        "used": 157184,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 250960,
+        "capacity": 178800,
+        "used": 178800,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1773735936,
+        "committedMemory": 1773735936,
+        "capacity": 1773717832,
+        "used": 1773717832,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2.11426,
+    "kernelCpuSeconds": 0.53358,
+    "cpuConsumptionPercent": 132.392,
+    "maxRss": 2712199168,
+    "pageFaults": {
+      "IORequired": 9,
+      "IONotRequired": 663257
+    },
+    "fsActivity": {
+      "reads": 2024,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 1.83045,
+    "kernelCpuSeconds": 0.524701,
+    "cpuConsumptionPercent": 117.757,
+    "fsActivity": {
+      "reads": 2024,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "LANGUAGE": "en_US:en",
+    "SNAP_INSTANCE_KEY": "",
+    "USER": "bebopvinh",
+    "SNAP_COMMON": "/var/snap/code/common",
+    "LC_TIME": "en_US.UTF-8",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "SSH_AGENT_PID": "3184",
+    "XDG_SESSION_TYPE": "x11",
+    "XDG_CACHE_HOME": "/home/bebopvinh/snap/code/common/.cache",
+    "SHLVL": "1",
+    "VSCODE_LOG_STACK": "false",
+    "QT4_IM_MODULE": "ibus",
+    "HOME": "/home/bebopvinh",
+    "SNAP_LIBRARY_PATH": "/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "LESS": "-R",
+    "OLDPWD": "/home/bebopvinh",
+    "DESKTOP_SESSION": "pop",
+    "SNAP_USER_DATA": "/home/bebopvinh/snap/code/21",
+    "NVM_BIN": "/home/bebopvinh/.nvm/versions/node/v13.0.1/bin",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/var/lib/snapd/desktop/applications/code_code.desktop",
+    "VSCODE_IPC_HOOK": "/run/user/1000/snap.code/vscode-35dbdf4f-1.40.2-main.sock",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "ZSH": "/home/bebopvinh/.oh-my-zsh",
+    "GNOME_SHELL_SESSION_MODE": "pop",
+    "GTK_MODULES": "gail:atk-bridge",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "VSCODE_LOGS": "/home/bebopvinh/.config/Code/logs/20191206T155759",
+    "PAGER": "less",
+    "LC_MONETARY": "en_US.UTF-8",
+    "MANAGERPID": "2985",
+    "NOTIFY_SOCKET": "/run/user/1000/systemd/notify",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "SNAP_REVISION": "21",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "4775",
+    "PIPE_LOGGING": "true",
+    "NVM_DIR": "/home/bebopvinh/.nvm",
+    "MANDATORY_PATH": "/usr/share/gconf/pop.mandatory.path",
+    "IM_CONFIG_PHASE": "1",
+    "GTK_IM_MODULE": "ibus",
+    "LOGNAME": "bebopvinh",
+    "SNAP_CONTEXT": "b77SWFbHWQpC7Gk3GxbqhCHjhh6Dl0W30BYYvQVw6cTp",
+    "rvm_bin_path": "/home/bebopvinh/.rvm/bin",
+    "JOURNAL_STREAM": "9:51464",
+    "_": "/snap/code/21/usr/share/code/code",
+    "RUBY_VERSION": "ruby-2.6.3",
+    "XDG_SESSION_CLASS": "user",
+    "DEFAULTS_PATH": "/usr/share/gconf/pop.default.path",
+    "SNAP_VERSION": "f359dd69",
+    "IRBRC": "/home/bebopvinh/.rvm/rubies/ruby-2.6.3/.irbrc",
+    "USERNAME": "bebopvinh",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "SNAP_INSTANCE_NAME": "code",
+    "WINDOWPATH": "2",
+    "PATH": "/home/bebopvinh/.nvm/versions/node/v13.0.1/bin:/home/bebopvinh/.rvm/gems/ruby-2.6.3/bin:/home/bebopvinh/.rvm/gems/ruby-2.6.3@global/bin:/home/bebopvinh/.rvm/rubies/ruby-2.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bebopvinh/.rvm/bin",
+    "SESSION_MANAGER": "local/pop-os:@/tmp/.ICE-unix/3288,unix/pop-os:/tmp/.ICE-unix/3288",
+    "INVOCATION_ID": "adb47bc71b2848d593dfdc2b7d18f7f6",
+    "PAPERSIZE": "letter",
+    "XDG_MENU_PREFIX": "gnome-",
+    "LC_ADDRESS": "en_US.UTF-8",
+    "BAMF_DESKTOP_FILE_HINT": "/var/lib/snapd/desktop/applications/code_code.desktop",
+    "SNAP_DATA": "/var/snap/code/21",
+    "XDG_RUNTIME_DIR": "/run/user/1000/snap.code",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/bebopvinh/.config/Code/CachedData/f359dd69833dd8800b54d458f6d37ab7c78df520",
+    "MY_RUBY_HOME": "/home/bebopvinh/.rvm/rubies/ruby-2.6.3",
+    "DISPLAY": ":1",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "LC_TELEPHONE": "en_US.UTF-8",
+    "XMODIFIERS": "@im=ibus",
+    "XDG_SESSION_DESKTOP": "pop",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "LS_COLORS": "",
+    "SNAP_USER_COMMON": "/home/bebopvinh/snap/code/common",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "GSETTINGS_SCHEMA_DIR": "/snap/code/21/usr/share/glib-2.0/schemas",
+    "SNAP_ARCH": "amd64",
+    "SNAP_COOKIE": "b77SWFbHWQpC7Gk3GxbqhCHjhh6Dl0W30BYYvQVw6cTp",
+    "SHELL": "/usr/bin/zsh",
+    "LC_NAME": "en_US.UTF-8",
+    "DISABLE_WAYLAND": "1",
+    "GDK_PIXBUF_MODULEDIR": "/snap/code/21/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "rvm_prefix": "/home/bebopvinh",
+    "SNAP_REEXEC": "",
+    "GDMSESSION": "pop",
+    "NO_AT_BRIDGE": "1",
+    "VERBOSE_LOGGING": "true",
+    "GEM_HOME": "/home/bebopvinh/.rvm/gems/ruby-2.6.3",
+    "SNAP_NAME": "code",
+    "VSCODE_FORCE_USER_ENV": "1",
+    "LC_MEASUREMENT": "en_US.UTF-8",
+    "GDK_PIXBUF_MODULE_FILE": "/home/bebopvinh/snap/code/common/.cache/gdk-pixbuf-loaders.cache",
+    "rvm_version": "1.29.9 (latest)",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "LC_IDENTIFICATION": "en_US.UTF-8",
+    "QT_IM_MODULE": "ibus",
+    "PWD": "/home/bebopvinh/development/extra/colt-steele-ds-algo",
+    "GEM_PATH": "/home/bebopvinh/.rvm/gems/ruby-2.6.3:/home/bebopvinh/.rvm/gems/ruby-2.6.3@global",
+    "VSCODE_CLI": "1",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-pop:/etc/xdg",
+    "CLUTTER_IM_MODULE": "ibus",
+    "XDG_DATA_DIRS": "/usr/share/pop:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "NVM_CD_FLAGS": "-q",
+    "SNAP": "/snap/code/21",
+    "LC_NUMERIC": "en_US.UTF-8",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "LC_PAPER": "en_US.UTF-8",
+    "rvm_path": "/home/bebopvinh/.rvm",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "VSCODE_PID": "4821",
+    "VSCODE_IPC_HOOK_EXTHOST": "/tmp/vscode-ipc-28c6276b-54ec-4fd7-97b2-e4b186967ade.sock"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 63379,
+      "hard": 63379
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
